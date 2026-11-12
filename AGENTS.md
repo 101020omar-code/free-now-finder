@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## App structure
+
+- Keep the imported Quran app and its feature modules under `src/quran/` and `src/routes/`, while preserving the host's `src/start.ts`, `src/router.tsx`, `src/server.ts`, and pinned TanStack versions so the existing preview runtime remains intact.

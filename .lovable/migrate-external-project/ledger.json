@@ -1,0 +1,18 @@
+{
+  "source": "github/hamza23557-ctrl/are-they-free-now",
+  "source_commit": "44a2c08d34755250d4083284e36f8c4e707bb6c6",
+  "capabilities": [
+    { "capability": "application code and routes", "source": "public GitHub repository", "outcome": "migrate", "status": "pending", "next_action": "Import and verify the preview" },
+    { "capability": "database schema", "source": "Drizzle schema file and migration metadata; no usable application schema or database migration found", "outcome": "not detected", "status": "pending", "next_action": "Verify source code has no database-backed workflows" },
+    { "capability": "application records", "source": "No data export attached; app content is bundled JSON and media", "outcome": "pending", "status": "pending", "next_action": "Verify bundled Quran and hadith content in preview" },
+    { "capability": "authentication identities", "source": "Generated Supabase client/auth scaffolding; no configured source credentials or user export", "outcome": "not migrated", "status": "pending", "next_action": "Verify whether app uses account-based access" },
+    { "capability": "authorization", "source": "No role/schema rules detected", "outcome": "not detected", "status": "pending", "next_action": "Verify source routes and interactions" },
+    { "capability": "uploaded file bytes", "source": "Bundled static media and audio in GitHub", "outcome": "migrate", "status": "pending", "next_action": "Verify media availability in preview" },
+    { "capability": "external providers", "source": "Aladhan prayer times, Google AdMob for native app, Lovable AI Gateway for Illuminated Book", "outcome": "preserve", "status": "pending", "next_action": "Verify supported preview flows; native ads are not available in a browser preview" },
+    { "capability": "public endpoints and callbacks", "source": "No custom public API routes, webhooks, or OAuth callbacks detected", "outcome": "not detected", "status": "pending", "next_action": "Verify imported routes" },
+    { "capability": "schedules", "source": "Local device reminders only", "outcome": "migrate", "status": "pending", "next_action": "Verify browser preview behavior" },
+    { "capability": "secrets", "source": "No credential values imported; source app uses provisioned LOVABLE_API_KEY for AI", "outcome": "preserve", "status": "pending", "next_action": "Verify the preview AI response if Lovable AI is enabled" },
+    { "capability": "cutover", "source": "No published production URL provided; source repository includes a live URL in README", "outcome": "not requested", "status": "pending", "next_action": "No cutover requested" },
+    { "capability": "verification", "source": "Lovable preview", "outcome": "verify", "status": "pending", "next_action": "Check build logs, app rendering, and navigation" }
+  ]
+}
