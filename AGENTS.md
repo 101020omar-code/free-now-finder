@@ -32,3 +32,4 @@ use the editor.
 ## App structure
 
 - Keep the imported Quran app and its feature modules under `src/quran/` and `src/routes/`, while preserving the host's `src/start.ts`, `src/router.tsx`, `src/server.ts`, and pinned TanStack versions so the existing preview runtime remains intact.
+- Keep Android launcher icon and splash assets synchronized with the supplied brand artwork across all density variants, so the installed app matches the web startup experience.

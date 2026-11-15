@@ -20,7 +20,6 @@ export function BottomNavigation() {
           <Button key={to} asChild variant="ghost" className={`bottom-navigation-item ${active ? "bottom-navigation-item--active" : ""}`}>
             <Link to={to} aria-current={active ? "page" : undefined} aria-label={label}>
               <Icon aria-hidden="true" />
-              <span>{label}</span>
             </Link>
           </Button>
         );

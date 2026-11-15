@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import startupImage from "@/assets/quran-startup.jpg";
+import startupImage from "@/assets/quran-startup.jpg.asset.json";
 
 /** Present in the initial HTML, including the offline SPA shell. */
 export function StartupScreen() {
@@ -29,7 +29,7 @@ export function StartupScreen() {
   return (
     <div className="startup-screen" role="status" aria-label="جارٍ فتح التطبيق">
       <div className="startup-art">
-        <img src={startupImage} alt="القرآن الكريم — Quran Kareem" fetchPriority="high" />
+        <img src={startupImage.url} alt="القرآن الكريم — Quran Kareem" fetchPriority="high" />
         <span className="startup-spinner" aria-hidden="true" />
       </div>
     </div>
